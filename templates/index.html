@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Assistant</title>
+    <!-- Add Font Awesome CDN link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div id="chat-container">
+        <h1>Chat Assistant</h1>
+        
+        <!-- Reference Questions Section -->
+        <div id="reference-questions">
+            <h2>Reference Questions:</h2>
+            <ul>
+                <li>
+                    List all employees.
+                    <i class="far fa-copy copy-icon" onclick="copyToClipboard(event)"></i>
+                </li>
+                <li>
+                    Show me all employees in the Sales department.
+                    <i class="far fa-copy copy-icon" onclick="copyToClipboard(event)"></i>
+                </li>
+                <li>
+                    Show me all employees in the HR department.
+                    <i class="far fa-copy copy-icon" onclick="copyToClipboard(event)"></i>
+                </li>
+                <li>
+                    Show me all employees hired after 2020-01-01.
+                    <i class="far fa-copy copy-icon" onclick="copyToClipboard(event)"></i>
+                </li>
+                <li>
+                    What are the details of employee John?
+                    <i class="far fa-copy copy-icon" onclick="copyToClipboard(event)"></i>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Chat Interface -->
+        <div id="response-box"></div>
+        <input type="text" id="user-query" placeholder="Ask a question...">
+        <button onclick="askQuestion()">Ask</button>
+
+        <!-- GitHub Icon Link -->
+        <a href="https://github.com/Legend-Vikki" target="_blank" id="github-link">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
